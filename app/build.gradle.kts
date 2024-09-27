@@ -30,7 +30,8 @@ android {
         }
 
         val apiKey : String = localProperty.getProperty("API_KEY") ?: "null"
-
+        val apiGoogleMap : String = localProperty.getProperty("API_GOOGLE_MAP") ?: "null"
+        manifestPlaceholders["apiGoogleMap"] = apiGoogleMap
 
         buildConfigField("String","API_KEY",apiKey)
     }
