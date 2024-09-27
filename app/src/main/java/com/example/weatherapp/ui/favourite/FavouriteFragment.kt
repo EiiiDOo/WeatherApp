@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.weatherapp.databinding.FragmentGalleryBinding
+import com.example.weatherapp.ui.main.MainActivity
 
 class FavouriteFragment : Fragment() {
 
@@ -34,6 +35,15 @@ private var _binding: FragmentGalleryBinding? = null
     return root
   }
 
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).showAppBar(true)
+
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
