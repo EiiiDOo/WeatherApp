@@ -1,3 +1,5 @@
+package com.example.weatherapp.ui.home
+
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
