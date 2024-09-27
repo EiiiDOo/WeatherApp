@@ -25,6 +25,7 @@ fun main(){
         }
         jop.join()
     }*/
+
     val list =  mutableListOf<Int>()
     repeat(40){
         list.add(it)
