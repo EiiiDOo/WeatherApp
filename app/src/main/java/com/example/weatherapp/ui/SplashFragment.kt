@@ -10,6 +10,7 @@ import androidx.navigation.Navigation
 import com.example.weatherapp.DialogCustom
 import com.example.weatherapp.R
 import com.example.weatherapp.databinding.FragmentSplashBinding
+import com.example.weatherapp.ui.main.MainActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -26,9 +27,10 @@ class SplashFragment : Fragment() ,OnOkClickListner {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         lifecycleScope.launch {
             //TODO("check here if the user is already run the app one time at least")
-            if(true){
+            if(false){
                 Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_nav_home)
             }else{
                 delay(3000)
@@ -38,6 +40,11 @@ class SplashFragment : Fragment() ,OnOkClickListner {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).showAppBar(false)
+
+    }
     override fun onOkClick() {
         Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_nav_home)
     }
