@@ -41,6 +41,9 @@ import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
+    companion object {
+        const val TAG = "HOME FRAGMENT"
+    }
     var insertion: Long = -1
     val REQUEST_CODE = 1
     lateinit var binding: FragmentHomeBinding
@@ -74,15 +77,28 @@ class HomeFragment : Fragment() {
         sharedPreferences = requireActivity().getSharedPreferences("MyPref", MODE_PRIVATE)
         val fromDatabase = sharedPreferences.getBoolean("fromDatabase", false)
         if (fromDatabase) {
-            Log.d("HOMEFRAGMENT", "onViewCreated: from database")
+            Log.d(TAG, "onViewCreated: from database")
             lifecycleScope.launch {
-                mainViewModel.getHomeWeatherData().collect {
-                    showWeatherFromDatabase(it)
-                    showForecast(it.list)
+                mainViewModel.getHomeWeatherData()
+                    mainViewModel.homeData.collect {
+                        when(it){
+                            is StateGeneric.Error -> {
+                                Log.d(TAG, "onViewCreated: error")
+                            }
+                            StateGeneric.Loading -> {
+                                Log.d(TAG, "onViewCreated: loading")
+                            }
+                            is StateGeneric.Success -> {
+                                Log.d(TAG, "onViewCreated: success")
+                                showWeatherFromDatabase(it.data)
+                                showForecast(it.data.list)
+                            }
+                        }
+
                 }
             }
         } else {
-            Log.d("HOMEFRAGMENT", "onViewCreated: from retrofit")
+            Log.d(TAG, "onViewCreated: from retrofit")
             mainViewModel.getWeatherByLongitudeAndLatitude(31.2001, 29.9187)
             mainViewModel.getForecastByLongitudeAndLatitude(31.2001, 29.9187)
             getWeather()
