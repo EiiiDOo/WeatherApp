@@ -8,7 +8,7 @@ and add some of the most important locations to the favorites list with some exc
 Application Features:
 --------------------
 * Splash Screen and Lottie Animation: A visually appealing initial screen with animated elements to enhance user experience.
-* Initial settings dialog box that allows you to choose to use GPS or choose from the Google Map to use a custom location for the home page.
+* Initial settings dialog box that allows you to choose to use GPS or choose from Google Maps to use a custom location for the home page.
 * The home page contains information about the time the entire weather condition was recorded and a forecast for the next twenty-four hours and five days as well.
 * The Favorites page contains places that interest you and places that describe the weather conditions there.
 * The settings page allows you to change some things that make it easier to use, such as wind speed units, temperature, language, and how to specify the location.
@@ -17,6 +17,9 @@ Application Features:
 
 - Network Permission.
 - Location Permission.
+- Post Notification
+- System alert window ( Display over Apps )
+- Use Exact alarm
 
 <hr>
 <h2>Technologies Used:</h2>
@@ -49,40 +52,39 @@ Application Features:
 
 <hr>
 <h2>- Splash Screen & Lottie Animation </h2>
-<!-- <p align="center">
-        
-<img src= "https://github.com/user-attachments/assets/3bf47f3f-7dab-4ef6-8c7f-25f9331c3d83" width = "20%">
-  
-</p> -->
-
+<p align="center">
+<img src= "https://github.com/user-attachments/assets/1ca9eeb0-28f2-495f-bb09-16d944b4ec55" width = "20%">
+</p> 
 
 <h2>- Home Screen</h2>
-<!-- <p align="center">
-<img src= "https://github.com/user-attachments/assets/629c7212-9cf9-46ec-b6af-aa74bf467c14" width = "20%">
-
-</p> -->
-
-<h2> - Search by Map</h2>
-<!-- <p align="center">
-<img src= "https://github.com/user-attachments/assets/641c2bb9-2281-43f8-9792-3737b5597f64" width = "20%">
-</p> -->
-
-<h2> - Search by writing</h2>
-<!-- <p align="center">
-
-<img src="https://github.com/user-attachments/assets/61aed560-5fcf-4d25-81fe-7462a3eb64d5" width="20%">
-  &nbsp; &nbsp;
-</p> -->
-
-<h2>- Favorite Weather</h2>
-<!-- <p align="center">
-        <img src= "https://github.com/user-attachments/assets/bc434b1e-06f4-46f7-852f-9c8dbc057824" width = "20%">
-        <img src= "https://github.com/user-attachments/assets/8a93bdda-34c1-498b-8b89-a5f845b48b2f" width = "20%">
-</p> -->
-<h2>- Weather Details For Favourite</h2>
 <p align="center">
-<!-- <img src= "https://github.com/user-attachments/assets/b5a868a6-3310-4094-9ffc-66c96cb28f8a" width = "20%">
-        <img src= "https://github.com/user-attachments/assets/e96a1a38-8eb5-43c0-a087-9f67b280a442" width = "25%">
-</p> -->
+<img src= "https://github.com/user-attachments/assets/d35a4b85-26ef-4705-8aa7-5b9bc638b410" width = "20%">
+<img src= "https://github.com/user-attachments/assets/3a2a3fa8-08e6-4fdf-ad80-3737f8d9f21b" width = "20%">
+</p>
+
+<h2> - Search by Map and writing</h2>
+<p align="center">
+<img src= "https://github.com/user-attachments/assets/5b1cbc4b-782a-4432-b2f5-20c2d97ffc5a" width = "20%">
+<img src= "https://github.com/user-attachments/assets/6228b486-a406-4abf-9b96-71e0a5158a67" width = "20%">
+
+</p>
+
+<h2> - Settings</h2>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/9da4dfc1-2a2a-4217-b7ce-475373161106" width="20%">
+<img src="https://github.com/user-attachments/assets/7bebb5cd-1054-49c0-ad38-dbe8c8fc7d81" width="20%">
+  &nbsp; &nbsp;
+</p>
+
+<h2>- Favourite Weather and it's details</h2>
+ <p align="center">
+        <img src= "https://github.com/user-attachments/assets/f229d886-4e61-4833-b8e3-bcbf21e903ad" width = "20%">
+        <img src= "https://github.com/user-attachments/assets/ec4937b6-912e-460d-9ffe-6d5a0404a69a" width = "20%">
+</p>
+<h2>- Schedule an alarm with notification</h2>
+<p align="center">
+<img src= "https://github.com/user-attachments/assets/036fb7c9-bafe-40a8-aeeb-61fd2e9c0525" width = "20%">
+<img src= "https://github.com/user-attachments/assets/f4964d55-efe7-49b3-b054-3eb7443a7736" width = "20%">
+</p>
 
 <hr>
